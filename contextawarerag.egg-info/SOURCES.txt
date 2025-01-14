@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+contextawarerag/__init__.py
+contextawarerag.egg-info/PKG-INFO
+contextawarerag.egg-info/SOURCES.txt
+contextawarerag.egg-info/dependency_links.txt
+contextawarerag.egg-info/requires.txt
+contextawarerag.egg-info/top_level.txt
+contextawarerag/core/__init__.py
+contextawarerag/core/data/__init__.py
+contextawarerag/core/data/data_manager.py
+tests/__init__.py
+tests/test_data_manager.py
+tests/test_simple.py
