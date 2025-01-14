@@ -13,11 +13,24 @@ setup(
     packages=find_packages(),
     python_requires=">=3.8",
     install_requires=[
+        # Database dependencies
         "asyncpg>=0.29.0",
         "motor>=3.3.2",
         "redis>=5.0.1",
-        "opensearch-py>=2.4.2",
         "pymongo>=4.6.1",
+        
+        # Web scraping
+        "aiohttp>=3.8.1",
+        "beautifulsoup4>=4.9.3",
+        "fake-useragent>=1.1.1",
+        
+        # Async support
+        "asyncio>=3.4.3",
+        
+        # Utilities
+        "python-dotenv>=0.19.2",
+        "pydantic>=2.0.0",
+        "tenacity>=8.0.1",
     ],
     extras_require={
         'test': [
@@ -26,6 +39,17 @@ setup(
             'pytest-docker>=2.0.1',
             'docker>=7.0.0',
         ],
+        'dev': [
+            'black>=22.3.0',
+            'isort>=5.10.1',
+            'mypy>=0.981',
+            'flake8>=4.0.1',
+        ],
+        'chat': [
+            'openai>=1.0.0',
+            'langchain>=0.1.0',
+            'tiktoken>=0.5.1',
+        ]
     },
     author="Your Name",
     author_email="your.email@example.com",
